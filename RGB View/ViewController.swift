@@ -60,6 +60,7 @@ class ViewController: UIViewController {
             blue: CGFloat(sliderBlue.value),
             alpha: 1
         )
+    
     }
 }
 
