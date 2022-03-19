@@ -56,15 +56,47 @@
 		41189E8C27D2995F00B4D691 /* RGB View */ = {
 			isa = PBXGroup;
 			children = (
-				41189E8D27D2995F00B4D691 /* AppDelegate.swift */,
-				41189E8F27D2995F00B4D691 /* SceneDelegate.swift */,
-				41189E9127D2995F00B4D691 /* ViewController.swift */,
-				41189E9327D2995F00B4D691 /* Main.storyboard */,
-				41189E9627D2996000B4D691 /* Assets.xcassets */,
-				41189E9827D2996000B4D691 /* LaunchScreen.storyboard */,
-				41189E9B27D2996000B4D691 /* Info.plist */,
+				413C923D27E490DF0036083E /* ViewControllers */,
+				413C923F27E491190036083E /* App */,
+				413C923E27E491010036083E /* Storyboards */,
+				413C924127E491530036083E /* Resources */,
 			);
 			path = "RGB View";
+			sourceTree = "<group>";
+		};
+		413C923D27E490DF0036083E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41189E9127D2995F00B4D691 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		413C923E27E491010036083E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41189E9327D2995F00B4D691 /* Main.storyboard */,
+				41189E9827D2996000B4D691 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		413C923F27E491190036083E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41189E8D27D2995F00B4D691 /* AppDelegate.swift */,
+				41189E8F27D2995F00B4D691 /* SceneDelegate.swift */,
+				41189E9B27D2996000B4D691 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		413C924127E491530036083E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41189E9627D2996000B4D691 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RGB View/Info.plist";
+				INFOPLIST_FILE = "RGB View/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RGB View/Info.plist";
+				INFOPLIST_FILE = "RGB View/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
