@@ -58,7 +58,9 @@ class SettingViewController: UIViewController {
         }
     }
     @IBAction func transferColor() {
-        delegate.setNewValues(for: colorView.backgroundColor!)
+        guard let color = colorView.backgroundColor else { return }
+        delegate.setNewValues(for: color)
+        
         dismiss(animated: true)
     }
     
