@@ -24,6 +24,7 @@ class SettingViewController: UIViewController {
     @IBOutlet var blueTextField: UITextField!
     
     var mainColors: UIColor!
+    var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,8 @@ class SettingViewController: UIViewController {
     
     
     @IBAction func rgbSlider(_ sender: UISlider) {
-        colorSettingFromMainView()
+
+        setColor()
         
         switch sender {
         case redSlider:
@@ -55,6 +57,10 @@ class SettingViewController: UIViewController {
         
         }
     }
+    @IBAction func transferColor() {
+        delegate.setNewValues(for: colorView.backgroundColor!)
+        dismiss(animated: true)
+    }
     
     
 // MARK: - Private Methods
@@ -66,14 +72,11 @@ class SettingViewController: UIViewController {
     private func settingColor() {
         let image = CIColor(color: mainColors)
 
-
         redSlider.value = Float(image.red)
         greenSlider.value = Float(image.green)
         blueSlider.value = Float(image.blue)
-        
     }
     
-
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
